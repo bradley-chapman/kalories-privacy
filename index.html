@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kalories privacy policy</title>
+<style>
+  :root { color-scheme: light dark; --ink: #1F1A17; --soft: #5F5751; --canvas: #F7F3EE; --accent: #C2413A; }
+  @media (prefers-color-scheme: dark) { :root { --ink: #F5EFE9; --soft: #CBC1B9; --canvas: #15120F; --accent: #F08A82; } }
+  body { margin: 0; background: var(--canvas); color: var(--ink); font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1, h2, h3 { font-family: ui-rounded, -apple-system, sans-serif; line-height: 1.2; }
+  h1 { font-size: 2em; margin-top: 0; }
+  p, li { color: var(--soft); }
+  strong { color: var(--ink); }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+<h1>Kalories privacy policy</h1>
+<p><strong>Last updated: 22 October 2026</strong></p>
+<p>Kalories is a food tracker for iPhone made by Bradley Chapman ("we", "us").<br>
+This policy explains what happens to your information when you use it.</p>
+<h2>The short version</h2>
+<ul>
+<li>There's no account and no sign-in. We don't run any servers of our own.</li>
+<li>Your meal log (with small photo thumbnails), water, weight, goals and<br>
+settings are stored <strong>only on your iPhone</strong>. We never receive them.</li>
+<li>When you ask for an <strong>AI estimate</strong>, the meal photo or description you<br>
+chose is sent to <strong>Google's Gemini API</strong> (through Google's Firebase) so it<br>
+can work out the foods and nutrition. Kalories asks for your permission<br>
+before it sends your first photo or description, and you can always add<br>
+foods by hand instead.</li>
+<li>When you <strong>scan a barcode</strong>, only the barcode number is sent to <strong>Open Food<br>
+Facts</strong> to look up the product.</li>
+<li>No ads, no tracking, no analytics of how you use the app, and we never sell<br>
+or share your information for advertising.</li>
+</ul>
+<h2>What stays on your iPhone</h2>
+<p>Kalories keeps the following on your device only, in storage shared with the<br>
+Kalories widget:</p>
+<ul>
+<li>meals and foods you log, with their calories, protein, carbs, fat and fruit<br>
+and veg, and a small copy of each meal photo (640 pixels)</li>
+<li>water, weight entries, meals saved in My meals, streaks and badges</li>
+<li>your goals and the body details you enter in the goal calculator (such as<br>
+age, height, weight and activity level)</li>
+<li>your settings, such as reminder times and your buddy's name and look</li>
+</ul>
+<p>None of this is sent to us or to anyone else. It's included in your iPhone's<br>
+own backups (iCloud Backup or a computer backup), which Apple handles under<br>
+its terms.</p>
+<p><strong>Your Koffee character.</strong> If Koffee or Koffee Tycoon is installed on the same<br>
+iPhone, Kalories reads the character you made there (its look and name) so<br>
+your buddy matches. That happens on the device; nothing is sent anywhere.</p>
+<p><strong>Reminders</strong> are notifications scheduled on your iPhone. There's no<br>
+notification server.</p>
+<p><strong>Widgets, Siri and Shortcuts</strong> read your totals on the device. If you talk to<br>
+Siri, Apple processes your request under<br>
+<a href="https://www.apple.com/legal/privacy/" rel="nofollow">Apple's privacy policy</a>.</p>
+<p><strong>Exports.</strong> If you export your log as a JSON or CSV file, it goes only where<br>
+you choose to send or save it. We don't receive a copy.</p>
+<h2>What leaves your iPhone, and why</h2>
+<h3>AI estimates (Google Gemini through Firebase)</h3>
+<p>When you snap or pick a meal photo, or type a description, and ask Kalories<br>
+to estimate it, the app sends Google:</p>
+<ul>
+<li>the photo, shrunk to 1024 pixels on its longest side and saved fresh, so<br>
+camera details and location data in the original aren't included</li>
+<li>any words you typed about the meal</li>
+<li>short notes you've asked Kalories to remember about how you eat (for<br>
+example "my lattes are oat milk"), which you can see and delete in<br>
+Settings → What your buddy knows</li>
+<li>Kalories' instructions to the AI, and the name of the AI model</li>
+<li>technical details needed to answer the request: a security token from<br>
+Apple's App Attest (through Firebase App Check) that proves the request<br>
+comes from the real Kalories app, and the app's Firebase app ID and<br>
+version number</li>
+</ul>
+<p>It does <strong>not</strong> send your name, your meal history, your weight or body<br>
+details, or anything from Apple Health. Google sends back the foods and<br>
+nutrition numbers, which you can edit before saving.</p>
+<p><strong>While Kalories is in testing, it uses the free tier of Google's Gemini<br>
+API.</strong> Under the<br>
+<a href="https://ai.google.dev/gemini-api/terms" rel="nofollow">Gemini API Additional Terms of Service</a>,<br>
+Google may use what's sent on the free tier (photos, descriptions and the<br>
+answers) to improve its products, and people at Google may review it. So<br>
+please keep faces, names and other personal details out of meal photos and<br>
+descriptions. Before Kalories is released to the public it will move to<br>
+Google's paid service, where Google doesn't use this content to improve its<br>
+products and keeps it only for a limited time to detect and prevent abuse,<br>
+and this policy will be updated first.<br>
+We have Firebase's AI monitoring turned off, so we can't see your photos or<br>
+descriptions either.</p>
+<p>You stay in control: Kalories asks for your permission before your first AI<br>
+estimate, and you can add any meal by hand without sending anything. You can<br>
+also take back camera or photo access at any time in the iPhone Settings app.</p>
+<h3>App settings and security (Firebase)</h3>
+<p>When the app starts, it asks Firebase Remote Config which AI model to use.<br>
+Like every Firebase app, this request carries a random ID that Firebase<br>
+creates for this copy of the app (not your name or a device ID), plus basic<br>
+technical details such as the iOS version, app version, language, country<br>
+setting and time zone. Google uses these to send the right settings and, in<br>
+summary form, to understand which iOS and app versions are in use. Firebase<br>
+App Check uses Apple's App Attest (or DeviceCheck) to confirm requests come<br>
+from the genuine app, which stops others misusing the AI service.</p>
+<p>Google acts as a service provider (a "data processor") for Firebase. See<br>
+<a href="https://firebase.google.com/support/privacy" rel="nofollow">Privacy and security in Firebase</a>,<br>
+the <a href="https://firebase.google.com/terms/data-processing-terms" rel="nofollow">Firebase terms</a><br>
+and the <a href="https://policies.google.com/privacy" rel="nofollow">Google Privacy Policy</a>.</p>
+<h3>Nutrition labels</h3>
+<p>When you photograph a nutrition label, Kalories reads the numbers on your<br>
+iPhone with Apple's built-in text recognition. Nothing is sent anywhere.</p>
+<h3>Siri and widgets</h3>
+<p>The "Log a saved meal" Siri shortcut and the Quick add widget work on your<br>
+iPhone with the meals in My meals. If you speak to Siri, Apple handles your<br>
+request under its own privacy policy.</p>
+<h3>Barcode lookups (Open Food Facts)</h3>
+<p>When you scan a packaged food's barcode, Kalories asks<br>
+<a href="https://world.openfoodfacts.org" rel="nofollow">Open Food Facts</a>, a free, non-profit food<br>
+database, for that product. Only the barcode number is sent. Like any website,<br>
+Open Food Facts' servers see your internet (IP) address with the request; its<br>
+<a href="https://world.openfoodfacts.org/privacy" rel="nofollow">privacy policy</a> explains how it keeps<br>
+server logs for security and statistics.</p>
+<h3>Apple Health (optional)</h3>
+<p>If you turn on "Use Apple Health", Kalories writes each meal's energy,<br>
+protein, carbohydrates and fat, your water and your weigh-ins to the Health<br>
+app on your iPhone. It reads your weight (so weigh-ins from scales and other<br>
+apps show in Trends) and, only if you turn on "Add exercise to my goal",<br>
+today's active energy. What Kalories reads from Health stays on your iPhone:<br>
+it is never sent to Google, Open Food Facts, us or anyone else. Apple's<br>
+Health app holds this data under Apple's terms. You can stop it at any time in Kalories' settings, or<br>
+turn off Kalories' access in the Health app (tap your profile picture, then<br>
+Apps, then Kalories).</p>
+<h2>What we don't do</h2>
+<ul>
+<li>No accounts and no advertising. We don't use Google Analytics for<br>
+Firebase or any other advertising or analytics SDK, and we don't record<br>
+how you use the app.</li>
+<li>No tracking of you across other companies' apps or websites.</li>
+<li>No selling, renting or trading of your information, and no data brokers.</li>
+<li>Your information is never used to make decisions about you.</li>
+</ul>
+<p>We only use services (Google and Open Food Facts) whose terms and privacy<br>
+policies protect your information at least as well as this policy does, and<br>
+only for the purposes described here.</p>
+<h2>How long information is kept</h2>
+<ul>
+<li><strong>On your iPhone:</strong> until you delete it. Deleting a meal removes it (and<br>
+the Health entries Kalories wrote for it). Settings → "Erase all meals"<br>
+deletes your whole log. Deleting the app removes everything Kalories<br>
+stored. Anything already saved to Apple Health stays there until you<br>
+delete it in the Health app, and files you exported stay wherever you put<br>
+them.</li>
+<li><strong>Google Gemini:</strong> under the Gemini API terms linked above: during testing<br>
+(free tier) Google may keep and use it to improve its products; on the<br>
+paid service, only for a limited time to detect abuse. Firebase AI Logic<br>
+itself doesn't store it.</li>
+<li><strong>Firebase:</strong> the random app ID is kept by Firebase until it's deleted;<br>
+App Check keeps security tokens for at most 30 days. See<br>
+<a href="https://firebase.google.com/support/privacy" rel="nofollow">Privacy and security in Firebase</a>.</li>
+<li><strong>Open Food Facts:</strong> as described in its privacy policy.</li>
+</ul>
+<h2>Your choices and rights</h2>
+<ul>
+<li>Use "Add by hand" instead of AI estimates, or turn AI estimates off in<br>
+Settings, and nothing about your meals leaves your iPhone.</li>
+<li>Turn off camera, photos, notifications or Health access in the iPhone<br>
+Settings app (or the Health app) at any time.</li>
+<li>Delete meals one by one, use Settings → "Erase all meals", or delete<br>
+the app to remove all its data.</li>
+</ul>
+<p>Because we don't have accounts or servers, we hold no information that<br>
+identifies you, so there's nothing for us to look up, export or delete. If<br>
+you have a question or a request about your information (for example under<br>
+the GDPR, UK GDPR or California law), contact us at the address below and<br>
+we'll help, including with requests to Google about data sent through<br>
+Kalories.</p>
+<h2>Children</h2>
+<p>Kalories is meant for adults (18 and over). It isn't directed at children,<br>
+and we don't knowingly collect information from anyone under 18. Calorie<br>
+tracking isn't suitable for children.</p>
+<h2>Not medical advice</h2>
+<p>Kalories gives estimates to help you notice what you eat. They can be wrong,<br>
+and they aren't medical or dietary advice. Talk to a doctor or registered<br>
+dietitian before making big changes to what you eat, especially if you have a<br>
+health condition, are pregnant, or have had an eating disorder.</p>
+<h2>Where information is processed</h2>
+<p>Google and Open Food Facts may process information in the United States, the<br>
+European Union and other countries. Google states that it complies with the<br>
+EU-U.S. Data Privacy Framework and its UK and Swiss extensions.</p>
+<h2>Changes to this policy</h2>
+<p>If what Kalories does with your information changes, we'll update this page<br>
+and the date at the top before the app update that makes the change.</p>
+<h2>Contact</h2>
+<p>Questions about this policy or your information: <a href="mailto:hello@koffee-app.com">hello@koffee-app.com</a></p>
+</main>
+</body>
+</html>
